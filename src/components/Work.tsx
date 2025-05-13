@@ -1,4 +1,6 @@
 import Project from "./Project";
+import mementosBanner from "../../public/mementos.svg";
+import ecocraftBanner from "../../public/ecocraftBanner.svg";
 // import { Routes, Route } from 'react-router-dom'; 
 const Work = () => {
   return (
@@ -7,8 +9,8 @@ const Work = () => {
       <div className="mb-10">
         <h2 className="text-2xl sm:text-3xl text-[#28282B] font-medium mb-6">Case Studies</h2>
          <div className="flex gap-[24px] flex-col sm:flex-row">
-           <Project projImg="/mementos.svg" projKind="case study" projName="Mementos" projPath="https://coconut-exhaust-f38.notion.site/Mementos-1f1d26445ef38049a97de861d6cfb003?pvs=4" projDesc="Bring your memories to life"></Project>
-           <Project projImg="/ecocraftbanner.svg" projKind="case study" projName="EcoCraft" projPath="https://coconut-exhaust-f38.notion.site/EcoCraft-1f1d26445ef380e58edcfd6172f4f585?pvs=4" projDesc="Hand made for you"></Project>
+           <Project projImg={mementosBanner} projKind="case study" projName="Mementos" projPath="https://coconut-exhaust-f38.notion.site/Mementos-1f1d26445ef38049a97de861d6cfb003?pvs=4" projDesc="Bring your memories to life"></Project>
+           <Project projImg={ecocraftBanner} projKind="case study" projName="EcoCraft" projPath="https://coconut-exhaust-f38.notion.site/EcoCraft-1f1d26445ef380e58edcfd6172f4f585?pvs=4" projDesc="Hand made for you"></Project>
          </div>
       </div>
       <div className="mb-10 flex flex-col items-center sm:items-start">
