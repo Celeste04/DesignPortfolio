@@ -12,7 +12,8 @@ function App() {
     <>
       <div className="w-full flex flex-col pt-5 sm:pt-2"> {/*pt-18*/}
       <Nav/>
-      {/*<HashRouter></HashRouter>*/}
+      {/*<HashRouter>
+      </HashRouter>*/}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
