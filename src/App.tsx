@@ -1,6 +1,6 @@
 
 import Nav from "./components/Nav";
-import {HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 // import Home from "./components/HomeSection";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
