@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 const HomeSection = () => {
   // const buttonColor="#E36867";
   return (
-    <div className="h-[100vh] pl-5 pr-5 sm:pl-22 flex flex-col md:flex-row items-center md:items-start md:gap-[30px] md:justify-between">
+    <div className="h-[100vh] sm:h-[90vh] pl-5 pr-5 sm:pl-22 flex flex-col md:flex-row items-center md:items-start md:gap-[30px] md:justify-between">
         <img src={MeGraphic} className="w-[315px] h-[287px] mb-6 md:mb-0 md:w-[554px] md:h-[506px] block"></img>
         <div className="flex flex-col gap-[20px] items-center md:items-start mt-10 md:mt-16">
             <div id="intro" className="flex flex-col gap-[16px] text-center md:text-left md:w-[90%]">            
