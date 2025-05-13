@@ -1,0 +1,39 @@
+@import "tailwindcss";
+:root {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f6f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  cursor: url("/cherry.png") 0 0, auto;
+}
+
+div#nav-links a {
+  color:#28282B;
+}
+div#nav-links a:hover {
+  color:#E36867;
+}
+
+div h1 {
+  color:#28282B;
+}
+div#about p {
+  color:#28282B;
+}
+
+div#intro p {
+  color:#28282B;
+  font-size: 24px;
+}
+
+div#proj p {
+  font-size: 18px;
+  color:#717171;
+}
+
+h1 {
+  color:#28282B
+}
