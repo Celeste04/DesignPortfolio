@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 
 const EcoCraft = () => {
   return (
@@ -8,4 +8,4 @@ const EcoCraft = () => {
   )
 }
 
-export default EcoCraft
+export default EcoCraft*/

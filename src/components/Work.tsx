@@ -1,5 +1,5 @@
 import Project from "./Project";
-import { Routes, Route } from 'react-router-dom'; 
+// import { Routes, Route } from 'react-router-dom'; 
 const Work = () => {
   return (
     <div className="flex flex-col pl-5 pr-5 sm:pl-22 sm:pr-22">
