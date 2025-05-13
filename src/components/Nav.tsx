@@ -15,7 +15,7 @@ const Nav = () => {
         <div className="hidden sm:flex gap-16" id="nav-links">
           <Link to="/" className="hover:text-[#EF8987]">Home</Link>
           <Link to="/about" className="hover:text-[#EF8987]">About</Link>
-          <a href="#" className="hover:text-[#EF8987]">Resume</a>
+          <a href="https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing" className="hover:text-[#EF8987]">Resume</a>
         </div>
 
         {/* Hamburger button */}

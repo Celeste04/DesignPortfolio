@@ -12,7 +12,8 @@ const HomeSection = () => {
                 <p className="text-2xl sm:text-3xl leading-10 mb-6">I'm a <b>Product Designer</b> with a strong artistic vision and technical background, passionate about creating user-centric experiences.</p>
             </div>
             <div className="flex gap-[16px]">
-                <button className="p-2 pl-4 pr-4 rounded-lg  border-[2px] border-[#E36867] bg-[#E36867] text-white flex gap-[8px] hover:bg-transparent hover:text-[#E36867]">
+                <button onClick={() => window.open("https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing", "_blank", "noopener,noreferrer")}
+                className="p-2 pl-4 pr-4 rounded-lg  border-[2px] border-[#E36867] bg-[#E36867] text-white flex gap-[8px] hover:bg-transparent hover:text-[#E36867]">
                     <p>Resume</p>
                     <MdArrowOutward />
                 </button>
