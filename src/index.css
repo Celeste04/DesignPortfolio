@@ -14,7 +14,7 @@ button {
 
   --color-bg: linear-gradient(to bottom, #a7e6ff, #F4FBFF);
   --color-text: #28282B;
-  --color-subtext:#ADB5BD 
+  --color-subtext:#6B7280;
   --color-link-hover:#E36867;
 }
 
@@ -77,13 +77,8 @@ div#nav-links, .nav-button:hover, .nav-link:hover {
   color:#E36867;
 }
 
-
 div#intro p {
   font-size: 24px;
-}
-
-div#proj p {
-  font-size: 18px;
 }
 
 .general-text {

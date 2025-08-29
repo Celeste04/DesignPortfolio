@@ -17,15 +17,14 @@ const Work = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((_
     jobTitle="Software Tester"
     company="Nicoya Lifesciences"
     iconPath="/logos/nicoya.png"
-    body="Wrote hundreds of test cases and performed regression testing. I also built Python Scripts to automate tasks on scientific matchinery, reducing manual workload."
+    body="Wrote hundreds of test cases and performed regression testing. I also built Python Scripts to automate tasks on scientific machinery, reducing manual workload."
   />
    <TimelineElement
     date="May 2024 - Aug 2024"
     jobTitle="Software & UI/UX Developer"
     company="Marsh McLennan"
     iconPath="/logos/marsh.jpg"
-    body="This internship really challenged me to take risks. I started off as a software developer, creating reusable components with NextJS and Storybook. But I knew that the team needed a product designer, so I stepped in. I had no professional design experience. Only passion, determination, and hard work. Because I took the risk, I had the opportunity to lead the design of three projects, working closely with business user and developers to create wireframes and prototypes."
-  />
+    body="This internship challenged me to take risks. I started as a developer, creating reusable components with NextJS + Storybook, and later stepped in as a UI/UX designer. I had no professional design experience—only passion, determination, and hard work. This gave me the opportunity to lead the design of three projects, working closely with business users and developers to create wireframes and prototypes."/>
   <TimelineElement
     date="Jan 2025 - Present"
     jobTitle="Undergraduate Research Assistant"
@@ -47,7 +46,6 @@ const Work = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((_
     iconPath="/logos/faire.jpeg"
     body="Incoming Fall 2025 :D ~ Stay tuned!"
   />
-
 </VerticalTimeline>
   </div>
     </section>  

@@ -3,6 +3,7 @@ import Work from '../components/Work';
 import BottomNav from '../components/BottomNav';
 import Stars from '../components/Stars';
 import { useTheme } from '../context/ThemeContext';
+import { Projects } from '../components/Projects';
 type HomePageProps = {
   homeRef: React.RefObject<HTMLDivElement | null>;
   workRef: React.RefObject<HTMLDivElement | null>;
@@ -16,6 +17,7 @@ function HomePage({homeRef, workRef, contactRef}:HomePageProps) {
        {theme === "dark" && <Stars />}
       <HomeSection ref={homeRef}/>
       <Work ref={workRef}/>
+      <Projects></Projects>
       <BottomNav ref={contactRef}></BottomNav>
     </div>
   );
