@@ -6,8 +6,8 @@ import { TimelineElement } from './TimelineElement';
 import { forwardRef } from 'react';
 const Work = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((_,ref) => {
   return (
-    <section ref={ref} id="work" className="flex flex-col pl-5 pr-5 pt-10 sm:pl-22 sm:pr-22">
-        <h1 className="text-3xl text-center sm:text-5xl mb-3 lg:mb-10">Work Experience</h1>
+    <section ref={ref} id="work" className="flex flex-col pl-5 pr-5 pt-[100px] sm:pl-22 sm:pr-22">
+        <h1 className="text-3xl text-center sm:text-5xl mb-3 lg:mb-10 general-text general-text">Work Experience</h1>
   <div className="relative">
       <VerticalTimeline
     animate={true}

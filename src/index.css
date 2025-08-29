@@ -3,6 +3,9 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  cursor:pointer;
+}
 :root {
   font-family: 'Poppins', sans-serif;
   --color-primary: #E36867;
@@ -11,16 +14,27 @@ html {
 
   --color-bg: linear-gradient(to bottom, #a7e6ff, #F4FBFF);
   --color-text: #28282B;
+  --color-subtext:#ADB5BD 
+  --color-link-hover:#E36867;
 }
 
 html.dark {
   --color-bg: linear-gradient(to bottom, #0A091E, #7354a0);
   --color-text: #F4FBFF;
+  --color-subtext:#d2c6de;
 }
 
 @keyframes slow-bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-20px); } /* adjust height */
+}
+
+a {
+  color:var(--color-text);
+}
+
+a:hover {
+  color:var(--color-link-hover);
 }
 
 .animate-slow-bounce {
@@ -56,30 +70,25 @@ body {
   background: var(--color-bg);
 }
 
-div#nav-links a {
-  color:#28282B;
+div#nav-links, .nav-button, .nav-link {
+  color:var(--color-text);
 }
-div#nav-links a:hover {
+div#nav-links, .nav-button:hover, .nav-link:hover {
   color:#E36867;
 }
 
-div h1 {
-  color:#28282B;
-}
-div#about p {
-  color:#28282B;
-}
 
 div#intro p {
-  color:#28282B;
   font-size: 24px;
 }
 
 div#proj p {
   font-size: 18px;
-  color:#717171;
 }
 
-h1 {
-  color:#28282B
+.general-text {
+  color:var(--color-text);
+}
+.subtext {
+  color:var(--color-subtext);
 }

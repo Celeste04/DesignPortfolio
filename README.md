@@ -52,3 +52,4 @@ export default tseslint.config({
   },
 })
 ```
+Code for night stars inspired by niilz (https://codepen.io/niilz/pen/JQmGPe)

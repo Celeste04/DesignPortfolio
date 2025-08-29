@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi"; // hamburger and close icons
-import Logo from "/logo.svg";
-import { Link } from "react-router-dom";
+import { Logo } from "./Logo";
 import { MdSunny } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
@@ -23,24 +22,24 @@ const Nav = ({ homeRef, workRef, contactRef }: NavProps) => {
   };
 
   return (
-    <div className="bg-white sticky top-0 z-[9999] shadow-sm">
+    <div className={`sticky top-0 z-[9999] shadow-sm ${theme === "light"? "bg-white" : "bg-[#0A091E]"}`}>
       <div className="flex justify-between items-center h-18 px-5 sm:px-20">
-        <img src={Logo} alt="Logo" />
+        <Logo/>
 
         {/* Desktop links */}
         <div className="hidden sm:flex gap-8" id="nav-links">
-          <button onClick={() => scrollToSection(workRef)} className="hover:text-[#EF8987]">Work</button>
-          <button onClick={() => scrollToSection(workRef)} className="hover:text-[#EF8987]">Projects</button>
-          <button onClick={() => scrollToSection(contactRef)} className="hover:text-[#EF8987]">Contact</button>
+          <button onClick={() => scrollToSection(workRef)} className="nav-button hover:text-[#EF8987]">Work</button>
+          <button onClick={() => scrollToSection(workRef)} className="nav-button hover:text-[#EF8987]">Projects</button>
+          <button onClick={() => scrollToSection(contactRef)} className="nav-button hover:text-[#EF8987]">Contact</button>
           <a
             href="https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#EF8987]"
+            className="nav-link"
           >
             Resume
           </a>
-          <button className="hover:text-[#EF8987]" onClick={toggleTheme}>{(theme==="dark")? <MdSunny className="w-5 h-5"/> : <FaMoon className="w-5 h-5"/> }</button>
+          <button className="nav-button" onClick={toggleTheme}>{(theme==="dark")? <MdSunny className="w-5 h-5"/> : <FaMoon className="w-5 h-5"/> }</button>
         </div>
 
         {/* Hamburger button */}
@@ -60,10 +59,9 @@ const Nav = ({ homeRef, workRef, contactRef }: NavProps) => {
             ${isOpen ? "opacity-100 max-h-96" : "opacity-0 max-h-0 overflow-hidden"}
           `}
         >
-          <button onClick={() => scrollToSection(homeRef)} className="hover:text-[#EF8987]">Home</button>
-          <button onClick={() => scrollToSection(workRef)} className="hover:text-[#EF8987]">Work</button>
-          <Link to="/about" className="hover:text-[#EF8987]">About</Link>
-          <button onClick={() => scrollToSection(contactRef)} className="hover:text-[#EF8987]">Contact</button>
+          <button onClick={() => scrollToSection(homeRef)} className="nav-button">Home</button>
+          <button onClick={() => scrollToSection(workRef)} className="nav-button">Work</button>
+          <button onClick={() => scrollToSection(contactRef)} className="nav-button">Contact</button>
           <a
             href="https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing"
             target="_blank"
