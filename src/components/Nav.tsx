@@ -8,10 +8,11 @@ import { useTheme } from "../context/ThemeContext";
 type NavProps = {
   homeRef: React.RefObject<HTMLDivElement | null>;
   workRef: React.RefObject<HTMLDivElement | null>;
+  projectRef: React.RefObject<HTMLDivElement | null>;
   contactRef: React.RefObject<HTMLDivElement | null>;
 };
 
-const Nav = ({ homeRef, workRef, contactRef }: NavProps) => {
+const Nav = ({ homeRef, workRef, projectRef, contactRef }: NavProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
@@ -29,7 +30,7 @@ const Nav = ({ homeRef, workRef, contactRef }: NavProps) => {
         {/* Desktop links */}
         <div className="hidden sm:flex gap-8" id="nav-links">
           <button onClick={() => scrollToSection(workRef)} className="nav-button hover:text-[#EF8987]">Work</button>
-          <button onClick={() => scrollToSection(workRef)} className="nav-button hover:text-[#EF8987]">Projects</button>
+          <button onClick={() => scrollToSection(projectRef)} className="nav-button hover:text-[#EF8987]">Projects</button>
           <button onClick={() => scrollToSection(contactRef)} className="nav-button hover:text-[#EF8987]">Contact</button>
           <a
             href="https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing"
@@ -61,6 +62,7 @@ const Nav = ({ homeRef, workRef, contactRef }: NavProps) => {
         >
           <button onClick={() => scrollToSection(homeRef)} className="nav-button">Home</button>
           <button onClick={() => scrollToSection(workRef)} className="nav-button">Work</button>
+          <button onClick={() => scrollToSection(projectRef)} className="nav-button hover:text-[#EF8987]">Projects</button>
           <button onClick={() => scrollToSection(contactRef)} className="nav-button">Contact</button>
           <a
             href="https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing"

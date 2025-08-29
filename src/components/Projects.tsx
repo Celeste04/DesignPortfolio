@@ -3,11 +3,11 @@ import { ProjectCard } from "./ProjectCard";
 import PokePals from "../../public/projects/Pokepals.png";
 import SunnySide from "../../public/projects/sunnyside.png";
 import Frogger from "../../public/projects/frog.png";
+import { forwardRef } from 'react';
 
-
-export const Projects = () => {
+export const Projects = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>((_,ref) => {
     return (
-    <section className="flex flex-col mb-10">
+    <section ref={ref} className="flex flex-col mb-10 pt-[100px]">
         <h1 className="text-3xl text-center sm:text-5xl mb-10 lg:mb-10 general-text general-text">Projects</h1>
         <div className="flex flex-col items-center justify-center md:flex-row md:items-center md:gap-3 gap-8">
             <ProjectCard
@@ -34,5 +34,5 @@ export const Projects = () => {
         </div>
     </section>
     );
-};
+});
 
