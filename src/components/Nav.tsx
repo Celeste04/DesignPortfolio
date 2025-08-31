@@ -48,7 +48,7 @@ const Nav = ({ homeRef, workRef, projectRef, contactRef }: NavProps) => {
           className="sm:hidden text-2xl"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <HiX /> : <HiMenu />}
+          {isOpen ? <HiX className="general-text"/> : <HiMenu className="general-text"/>}
         </button>
       </div>
 
@@ -62,7 +62,7 @@ const Nav = ({ homeRef, workRef, projectRef, contactRef }: NavProps) => {
         >
           <button onClick={() => scrollToSection(homeRef)} className="nav-button">Home</button>
           <button onClick={() => scrollToSection(workRef)} className="nav-button">Work</button>
-          <button onClick={() => scrollToSection(projectRef)} className="nav-button hover:text-[#EF8987]">Projects</button>
+          <button onClick={() => scrollToSection(projectRef)} className="nav-button">Projects</button>
           <button onClick={() => scrollToSection(contactRef)} className="nav-button">Contact</button>
           <a
             href="https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing"
@@ -72,6 +72,7 @@ const Nav = ({ homeRef, workRef, projectRef, contactRef }: NavProps) => {
           >
             Resume
           </a>
+          <button className="nav-button" onClick={toggleTheme}>{(theme==="dark")? <MdSunny className="w-5 h-5"/> : <FaMoon className="w-5 h-5"/> }</button>
         </div>
 
     </div>
