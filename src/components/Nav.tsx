@@ -33,7 +33,7 @@ const Nav = ({ homeRef, workRef, projectRef, contactRef }: NavProps) => {
           <button onClick={() => scrollToSection(projectRef)} className="nav-button hover:text-[#EF8987]">Projects</button>
           <button onClick={() => scrollToSection(contactRef)} className="nav-button hover:text-[#EF8987]">Contact</button>
           <a
-            href="https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing"
+            href="https://drive.google.com/file/d/136ZzOQ--Vnc2xP-yrJ4Q3-eQdzuVXuMD/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-link"
@@ -65,7 +65,7 @@ const Nav = ({ homeRef, workRef, projectRef, contactRef }: NavProps) => {
           <button onClick={() => scrollToSection(projectRef)} className="nav-button">Projects</button>
           <button onClick={() => scrollToSection(contactRef)} className="nav-button">Contact</button>
           <a
-            href="https://drive.google.com/file/d/1FgdwEbC2r2ozXdoFccH5GqiLmZxazNjQ/view?usp=sharing"
+            href="https://drive.google.com/file/d/136ZzOQ--Vnc2xP-yrJ4Q3-eQdzuVXuMD/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#EF8987]"
